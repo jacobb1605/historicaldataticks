@@ -1,0 +1,2 @@
+entry_time,exit_time,side,qty,entry_price,exit_price,sl_price,tp_price,pnl,pnl_pct,r_multiple,tag,exit_reason
+2026-03-02 17:59:00+00:00,2026-03-02 18:03:00+00:00,sell,327.86,5308.099999999999,5299.25,5311.3,5299.099999999999,2901.5609999998214,0.029015609999998214,2.765624999999201,ICT_FVG_FIBO,take_profit
