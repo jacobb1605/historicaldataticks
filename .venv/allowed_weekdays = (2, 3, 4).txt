@@ -1,0 +1,43 @@
+allowed_weekdays = (2, 3, 4)
+min_gap = 0.25
+fib_lower = 0.55
+fib_upper = 0.70
+stop_buffer = 0.20
+entry_at = mid
+max_zone_age_bars = 8
+min_impulse_size = 3.0
+strong_impulse_size = 4.5
+strong_only = True
+break_even_trigger_tp_frac = 0.7125 or current winning value
+break_even_offset = 0.05
+
+ideas
+
+1) Reverse-on-CHOCH idea
+
+Do not add it now.
+
+Reason:
+
+It introduces a second strategy (mean-reversion / reversal) on top of your current trend-continuation model.
+Your current edge is:
+strong impulse
+continuation via FVG + fib
+Reversal requires:
+different entries
+different SL logic
+different filters
+
+If you add it now:
+
+you mix edges ❌
+you overfit quickly ❌
+debugging becomes difficult ❌
+
+Better approach later
+
+build it as a separate strategy
+or gate it strictly:
+only after TP hit
+only if structure breaks + displacement
+only 1 attempt
